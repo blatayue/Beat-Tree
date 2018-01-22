@@ -1,0 +1,13 @@
+dist: trusty
+language: ruby
+rvm:
+  - 2.2
+before_deploy:
+  - "rake"
+deploy: 
+  provider: pages
+  local_dir: "public"
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
