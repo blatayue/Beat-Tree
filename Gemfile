@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'thin'
-gem 'neo4j', github: 'andreasronge/neo4j'
+gem 'neo4j', :git => 'https://github.com/andreasronge/neo4j'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
